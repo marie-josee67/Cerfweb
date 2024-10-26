@@ -16,6 +16,30 @@
 }
 
 /* ************************************** global *********************************************** */
+/* navbarre */
+.contNav{
+    display:inline-block;
+    width: 100%;
+    /*border: 5px solid green;*/
+}
+
+/* taille du logo */
+.logoComplet {
+    height:88px;
+}
+
+.logo{
+    width: 25%;
+    /*border:2px solid red;*/
+}
+
+.navbarre{
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 2px solid blue;*/
+}
+
 h1{
     font-family: "Meow Script", cursive;
     font-size: 3.6rem;
@@ -31,3 +55,34 @@ p{
     font-size: 1.2rem;
 }
 
+/* **************************************** réalisation **************************************** */
+
+/* projets */
+.container-fluid{
+    width: 100%;
+    /*border: 2px solid blue;*/
+}
+
+.vignette{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*border: 2px solid rgb(197, 151, 26);*/
+}
+
+.projet{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    /*border: 2px solid purple;*/
+}
+
+.carte{
+    margin: 20px;
+    /*border: 2px solid rgb(58, 199, 30);*/
+}
+
+.img{
+    height: 200px;
+    /*border: 2px solid red;*/
+}

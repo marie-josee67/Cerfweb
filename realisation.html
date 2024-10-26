@@ -27,21 +27,21 @@
 <body>
     <header>
         <!-- Navbarre  -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg contNav">
             <div class="container-fluid">
                 <!-- burger -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class=" row g-0 collapse navbar-collapse" id="navbarNav">
                     <!-- logo qui renvoie a la page d'accueil -->
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./img/logo/Fichier 3.png" alt="logo">
+                    <a class="cols-12 cols-sm-6 cols-md-3  navbar-brand logo" href="./index.html"> <!-- logo = class perso-->
+                        <img src="./img/logo/Fichier 3.png" class="logoComplet" alt="logo">
                     </a>
 
                     <!-- navbarre onglet-->
-                    <ul class="navbar-nav">
+                    <ul class=" cols-12 cols-sm-6 cols-md-9 navbar-nav navbarre"> <!-- navbarre = class perso-->
                         <li class="nav-item">
                             <a class="nav-link active" href="./index.html">Accueil</a>
                         </li>
@@ -57,66 +57,68 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+          </nav>
     </header>
 
     <main>
         <!-- projets -->
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col">
-              <div class="card">
-                <img src="./img/projet/projet_photopea_2022.jpg" class="card-img-top" alt="incrustation d'images pour former une seule image">
-                <div class="card-body">
-                  <h3 class="card-title">Card title</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <img src="./img/projet/Projet_restaurant_fictif_le_quai_des_machine.PNG" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Card title</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <img src="./img/projet/sup_image.JPG" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Card title</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <img src="./img/projet/carte de visite recto.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Card title</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                  <img src="./img/projet/Fiche_metier_Web_Design.JPG" class="card-img-top" alt="...">
-                  <div class="card-body">
+        <section class="container-fluid">
+            <div class="row g-0 vignette">
+                <div class="cols-12 cols-sm-2 cols-md-3 projet"><!-- projet => class perso -->
+                <div class="card carte"> <!-- carte => class perso -->
+                    <img src="./img/projet/projet_photopea_2022.jpg" class="card-img img" alt="incrustation d'images pour former une seule image"><!-- img => class perso -->
+                    <div class="card-body">
                     <h3 class="card-title">Card title</h3>
-                  </div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="col">
-                <div class="card">
-                  <img src="./img/projet/Logo blanc 3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
+                </div>
+
+                <div class="cols-12 cols-sm-2 cols-md-3 projet">
+                <div class="card carte">
+                    <img src="./img/projet/Projet_restaurant_fictif_le_quai_des_machine.PNG" class="card-img-top img" alt="...">
+                    <div class="card-body">
                     <h3 class="card-title">Card title</h3>
-                  </div>
+                    </div>
                 </div>
-              </div>
-          </div>
+                </div>
+
+                <div class="cols-12 cols-sm-2 cols-md-3 projet">
+                <div class="card carte">
+                    <img src="./img/projet/sup_image.JPG" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                    <h3 class="card-title">Card title</h3>
+                    </div>
+                </div>
+                </div>
+
+                <div class="cols-12 cols-sm-2 cols-md-3 projet">
+                <div class="card carte">
+                    <img src="./img/projet/carte de visite recto.png" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                    <h3 class="card-title">Card title</h3>
+                    </div>
+                </div>
+                </div>
+
+                <div class="cols-12 cols-sm-2 cols-md-3 projet">
+                    <div class="card carte">
+                    <img src="./img/projet/Fiche_metier_Web_Design.JPG" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="cols-12 cols-sm-2 cols-md-3 projet">
+                    <div class="card carte">
+                    <img src="./img/projet/Logo blanc 3.jpg" class="card-img-top img" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
