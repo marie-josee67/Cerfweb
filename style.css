@@ -31,33 +31,3 @@ p{
     font-size: 1.2rem;
 }
 
-/* ************************************ fictif ********************************** */
-.fictif{
-    background-color:var(--bg-light);
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* *********************************** accroche ******************************** */
- 
-.accroche{
-    padding: 1.5rem 0;
-    text-align: center;
-}
-
-.logoAccroche{
-    border: 2px solid red;
-    padding: 1rem;
-}
-.logoComplet{
-    height: 12rem;
-}
-/* *********************************** accroche ******************************** */
-
-.urgence{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-around;
-    background-color:var(--bg-light);
-}

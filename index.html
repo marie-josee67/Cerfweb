@@ -27,19 +27,38 @@
 <body>
     <header>
         <!-- Navbarre  -->
-        <nav class="navbarre">
-            <div id="logo">
-               <a href="./index.html"> <img src="./img/logo/Fichier 3.png" alt="logo complet"> </a>
+         <!-- Navbarre  -->
+         <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- logo qui renvoie a la page d'accueil -->
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo/Fichier 3.png" alt="logo">
+                    </a>
+                    
+                    <!-- navbarre onglet-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agence.html">L'agence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./realisation.html">Réalisation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu">
-                <ul>
-                    <li>Acceuil</li>
-                    <li>L'agence</li>
-                    <li>Réalisation</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </nav>
+          </nav>
     </header>
 
     <main>
@@ -78,5 +97,6 @@
     
      <!-- boostrap Js -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="./script.js"></script>
 </body>
 </html>
