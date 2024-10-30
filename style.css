@@ -16,6 +16,11 @@
 }
 
 /* ************************************** global *********************************************** */
+/* initialise pour que le (rem) soit conforme */
+html{
+    font-size: 62.5%;
+}
+
 /* navbarre */
 .contNav{
     display:inline-block;
