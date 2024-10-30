@@ -99,3 +99,21 @@ p{
     height: 200px;
     /*border: 2px solid red;*/
 }
+
+/* fiche descriptif de projet */
+.tailleFenetre{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+/* pour que les image dépasse pas */
+.modalImg{
+    width: 100%;
+}
+
+/* retrait du fond boostrap */
+.buttonProjet{
+    background: none;
+    border: none;
+}
