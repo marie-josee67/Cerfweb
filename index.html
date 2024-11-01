@@ -38,13 +38,13 @@
                     <div class=" row g-0 collapse navbar-collapse" id="navbarNav">
                         <!-- logo qui renvoie a la page d'accueil -->
                         <a class="cols-1 cols-sm-6 cols-md-3  navbar-brand logo" href="./index.html"> <!-- logo = class perso-->
-                            <img src="./img/logo/Fichier 3.png" class="logoComplet" alt="logo">
+                            <img src="./img/logo/Fichier 3.png" id="image1" class="logoComplet" alt="logo">
                         </a>
     
                         <!-- navbarre onglet-->
-                        <ul class=" cols-10 cols-sm-5 cols-md-8 navbar-nav navbarre"> <!-- navbarre = class perso-->
+                        <ul class=" cols-10 cols-sm-5 cols-md-8 navbar-nav"> 
                             <li class="nav-item">
-                                <a class="nav-link active" href="./index.html">Accueil</a>
+                                <a class="nav-link" href="./index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./agence.html">L'agence</a>
@@ -56,9 +56,8 @@
                                 <a class="nav-link" href="./contact.html">Contact</a>
                             </li>
                         </ul>
-                        <!--<button class=" dark-mode-button" onclick="boutonDarkMode()">Toggle Dark Mode</button>-->
-                        <button class="cols-12 cols-sm-12 cols-md-12  dark-mode-button" onclick="boutonDarkMode()">
-                            <!--<img  src="sun-icon.png" alt="Icone de Mode">-->
+                        <!-- bouton light / dark -->
+                        <button class="cols-1 cols-sm-1 cols-md-1  dark-mode-button" onclick="boutonDarkMode()">
                             <i id="mode-icon" class="fa-solid fa-sun"></i>
                         </button>
                     </div>
@@ -77,7 +76,7 @@
             <h1>Bienvenue chez :</h1>
 
             <div class="logoAccroche" >
-                <img src="./img/logo/Fichier 3.png" alt="logo sans le nom de l'entreprise">
+                <img id="image2" src="./img/logo/Fichier 3.png" alt="logo sans le nom de l'entreprise">
             </div>
 
             <p>Votre partenaire pour un site internet sur mesure !</p>
