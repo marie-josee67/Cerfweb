@@ -90,6 +90,44 @@ body {
     transition: opacity 0.3s;
 }
 
+/* nav bouton dark/light  */
+/* Position du bouton de mode sombre en vue bureau */
+.dark-mode-button {
+    margin-left: auto; /* Pousse le bouton de mode sombre à droite en bureau */
+    order: 1;
+    border: none;
+}
+
+/* Centre les éléments du menu onglet */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Vue mobile (max 768px) - bouton à gauche du burger */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        order: 2; /* Le burger reste à droite en mobile */
+    }
+
+    .dark-mode-button {
+        order: 1; /* Le bouton de mode sombre reste à gauche du burger */
+        margin-right: 0.5rem; /* Espace entre le bouton et le burger */
+    }
+
+    /* Centrer les onglets quand le menu est déployé */
+    .collapse.navbar-collapse {
+        justify-content: center;
+    }
+}
+
+.fa-moon,.fa-sun {
+    font-size: 20px;
+    color: var(--bg-dark-texte);
+    background-color: var(--button-light);
+}
+
+
 h1{
     font-family: "Meow Script", cursive;
     font-size: 3.6rem;

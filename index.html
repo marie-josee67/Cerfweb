@@ -26,44 +26,44 @@
 </head>
 <body class="light">
     <header>
-        <!-- Navbarre  -->
-        <nav class="navbar navbar-expand-lg">
-            <nav class="navbar navbar-expand-lg contNav">
-                <div class="container-fluid">
-                    <!-- burger -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class=" row g-0 collapse navbar-collapse" id="navbarNav">
-                        <!-- logo qui renvoie a la page d'accueil -->
-                        <a class="cols-1 cols-sm-6 cols-md-3  navbar-brand logo" href="./index.html"> <!-- logo = class perso-->
-                            <img src="./img/logo/Fichier 3.png" id="image1" class="logoComplet" alt="logo">
-                        </a>
-    
-                        <!-- navbarre onglet-->
-                        <ul class=" cols-10 cols-sm-5 cols-md-8 navbar-nav"> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./agence.html">L'agence</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./realisation.html">Réalisation</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <!-- bouton light / dark -->
-                        <button class="cols-1 cols-sm-1 cols-md-1  dark-mode-button" onclick="boutonDarkMode()">
-                            <i id="mode-icon" class="fa-solid fa-moon"></i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg contNav">
+    <div class="container-fluid">
+        <!-- Logo qui renvoie à la page d'accueil -->
+        <a class="navbar-brand logo" href="./index.html">
+            <img src="./img/logo/Fichier 3.png" id="image1" class="logoComplet" alt="logo">
+        </a>
+
+        <!-- Bouton Dark Mode -->
+        <button class="dark-mode-button" onclick="boutonDarkMode()">
+            <i id="mode-icon" class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Onglet -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agence.html">L'agence</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./realisation.html">Réalisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
     </header>
 
     <main>
