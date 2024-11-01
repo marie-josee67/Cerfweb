@@ -4,7 +4,7 @@ function boutonDarkMode() {
     const isDarkMode = document.body.classList.contains('dark');
 
     // Changement des images du mode
-    document.getElementById('mode-icon').className = isDarkMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    document.getElementById('mode-icon').className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
 
     // rejouter autant que d'iamage par page a changer
     document.getElementById('image1').src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
