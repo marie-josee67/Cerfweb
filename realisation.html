@@ -26,24 +26,29 @@
 </head>
 <body>
     <header>
-        <!-- Navbarre  -->
-        <nav class="navbar navbar-expand-lg contNav">
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg contNav">
             <div class="container-fluid">
-                <!-- burger -->
+                <!-- Logo qui renvoie à la page d'accueil -->
+                <a class="navbar-brand logo" href="./index.html">
+                    <img src="./img/logo/Fichier 3.png" id="image1" class="logoComplet" alt="logo">
+                </a>
+
+                <!-- Bouton Dark Mode -->
+                <button class="dark-mode-button" onclick="boutonDarkMode()">
+                    <i id="mode-icon" class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Burger -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class=" row g-0 collapse navbar-collapse" id="navbarNav">
-                    <!-- logo qui renvoie a la page d'accueil -->
-                    <a class="cols-12 cols-sm-6 cols-md-3  navbar-brand logo" href="./index.html"> <!-- logo = class perso-->
-                        <img src="./img/logo/Fichier 3.png" class="logoComplet" alt="logo">
-                    </a>
-
-                    <!-- navbarre onglet-->
-                    <ul class=" cols-12 cols-sm-6 cols-md-9 navbar-nav navbarre"> <!-- navbarre = class perso-->
+                <!-- Navbar Onglet -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Accueil</a>
+                            <a class="nav-link" href="./index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./agence.html">L'agence</a>
@@ -57,7 +62,7 @@
                     </ul>
                 </div>
             </div>
-          </nav>
+        </nav>  
     </header>
 
     <main>
