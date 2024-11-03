@@ -75,9 +75,9 @@
         </section>
 
         <!-- formulmaire -->
-        <section>
+        <section class="container formulaire">
             <form class="row g-0"  method="post" action="traitement.php">
-                <div class="col-md-6">
+                <div class=" col-md-6">
                     <label for="nom" class="form-label">Nom *</label>
                     <input type="text" class="form-control" id="nom" value="Nom" required>
                 </div>
@@ -91,18 +91,18 @@
                 </div>
                 <div class="col-md-6">
                     <label for="telephone" class="form-label">Téléphone *</label>
-                    <input type="number" class="form-control" id="telephone" placeholder="01/23/45/67/89" required>
+                    <input type="text" class="form-control " id="telephone" value="01/23/45/67/89" required>
                 </div>
                 <div class="col-md-12">
                     <label for="email" class="form-label">Email *</label>
-                    <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2" value="description@exemple.fr" required>
+                    <input type="text" class="form-control" id="email" value="description@exemple.fr" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="pieceJointe1"> Pièce jointe 1</label>
-                    <input type="file" class="form-control" id="pieceJointe1" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <label for="pieceJointe1" class="form-label"> Pièce jointe 1</label>
+                    <input type="file" class="form-control" id="pieceJointe1">
                 </div>
                 <div class="col-md-6">
-                    <label for="pieceJointe2"> Pièce jointe 2</label>
+                    <label for="pieceJointe2" class="form-label"> Pièce jointe 2</label>
                     <input type="file" class="form-control" id="pieceJointe2"  >
                 </div>
                 <div>
@@ -110,9 +110,34 @@
                     <textarea name="message" class="form-control" id="message" placeholder="Bonjour ..."></textarea required>
                 </div>
                 <div class="col-12">
-                    <button  type="submit">Submit form</button>
+                    <button  class="go" type="submit">go</button>
                 </div>
             </form>
+        </section>
+
+        <!-- Localisation -->
+        <section class="container localisation">
+            <div class="row g-0 ">
+                <div class="cols-12 col-md-6 adresse">
+                    <div>
+                        <p>150,rue du Paradis</p>
+                    </div>
+                    <div>
+                        <p>67750 Scherwiller</p>
+                    </div>
+                    <div>
+                        <p>Lundi - Vendredi</p>
+                    </div>
+                    <div>
+                        <p>8h - 17h</p>
+                    </div>
+                    <!-- Bouton -->
+                    <button id="telephoneBoutton" onclick="magieNumero()">Numéro de téléphone</button>
+                </div>
+                <div class="col-md-6 carte ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42472.48673986785!2d7.3737609888741!3d48.29264919261474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47915ac3a2094a61%3A0x40a5fb99a394800!2sScherwiller%2C%20France!5e0!3m2!1sfr!2snl!4v1730632065127!5m2!1sfr!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
     </main>
 
