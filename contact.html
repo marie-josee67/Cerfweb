@@ -66,7 +66,54 @@
     </header>
 
     <main>
+        <!-- accroche contact -->
+        <section class="contact">
+            <h1>Contact</h1>
+            <p>Vous avez un projet à nous soumettre ? Nous serions ravis de vous entendre ! Chez Cerfweb, nous croyons en l'importance de chaque idée, qu'elle soit petite ou grande. Chaque projet est une nouvelle opportunité de créer, d'innover et de collaborer. Si vous avez des questions, des besoins spécifiques ou simplement l'envie de discuter de vos idées, n'hésitez pas à nous contacter. 
+            
+            <p>Remplissez le formulaire ci-dessous ou utilisez nos coordonnées pour nous joindre. Nous sommes ici pour vous accompagner à chaque étape de votre projet, de la conception à la réalisation. Notre équipe d'experts est à votre disposition pour vous fournir des conseils personnalisés et des solutions adaptées à vos besoins. Ensemble, nous pourrons explorer comment donner vie à votre vision et atteindre vos objectifs. Nous avons hâte de collaborer avec vous et de transformer vos idées en succès tangible ! </p>
+        </section>
 
+        <!-- formulmaire -->
+        <section>
+            <form class="row g-0"  method="post" action="traitement.php">
+                <div class="col-md-6">
+                    <label for="nom" class="form-label">Nom *</label>
+                    <input type="text" class="form-control" id="nom" value="Nom" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="prenom" class="form-label">Prenom *</label>
+                    <input type="text" class="form-control" id="prenom" value="Prénom" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="societe" class="form-label">Société</label>
+                    <input type="text" class="form-control" id="societe" value="société">
+                </div>
+                <div class="col-md-6">
+                    <label for="telephone" class="form-label">Téléphone *</label>
+                    <input type="number" class="form-control" id="telephone" placeholder="01/23/45/67/89" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2" value="description@exemple.fr" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="pieceJointe1"> Pièce jointe 1</label>
+                    <input type="file" class="form-control" id="pieceJointe1" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                </div>
+                <div class="col-md-6">
+                    <label for="pieceJointe2"> Pièce jointe 2</label>
+                    <input type="file" class="form-control" id="pieceJointe2"  >
+                </div>
+                <div>
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea name="message" class="form-control" id="message" placeholder="Bonjour ..."></textarea required>
+                </div>
+                <div class="col-12">
+                    <button  type="submit">Submit form</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
