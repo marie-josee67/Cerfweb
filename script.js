@@ -1,4 +1,4 @@
-// bouton dark /light mode
+// bouton dark /light mode navbarre
 function boutonDarkMode() {
     document.body.classList.toggle('dark');
     
@@ -13,7 +13,7 @@ function boutonDarkMode() {
     document.getElementById('image3').src = ISDARKMODE ? 'dark-image3.jpg' : 'light-image3.jpg';
 }
 
-// bouton numéro
+// bouton numéro page contact
 function magieNumero() {
     // Remplacer le texte du bouton par le numéro de téléphone
     document.getElementById("telephoneBoutton").innerText = "+33 1 23 45 67 89";

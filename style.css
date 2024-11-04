@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 /* *************************************** charte graphique *********************************** */
 :root {
@@ -22,12 +18,9 @@ body.dark {
     --bg-2-light:#939598;
 }
 
-
 /* ************************************** global *********************************************** */
 /* initialise pour que le (rem) soit conforme */
-html{
-    font-size: 62.5%;
-}
+
 
 /* navbarre */
 .contNav{
@@ -132,6 +125,7 @@ body {
 h1{
     font-family: "Meow Script", cursive;
     font-size: 3.6rem;
+    text-align: center;
 }
 
 h2{
@@ -180,11 +174,6 @@ p{
     /*border: 2px solid purple;*/
 }
 
-.carte{
-    margin: 20px;
-    /*border: 2px solid rgb(58, 199, 30);*/
-}
-
 .img{
     height: 200px;
     /*border: 2px solid red;*/
@@ -212,20 +201,20 @@ p{
 /* formulaire  */
 .formulaire{
     padding: 20px 10px ;
-    border: 2px dashed green;
+    /*border: 2px dashed green;*/
 }
 
 .form-label{
     color: var(--bg-dark-texte);
     margin-top: 10px;
-    border:2px solid blue;
+    /*border:2px solid blue;*/
 }
 
 .form-control{
     font-size: var(--bg-dark-texte);
     color: var(--bg-dark-texte);
     background-color: var(--bg-2-light);
-    border: 2px solid magenta;
+    /*border: 2px solid magenta;*/
 }
 
 #message{
@@ -249,26 +238,30 @@ textarea.form-control::placeholder{
 }
 
 /* localisation */
-/*.localisation{
-    border: 2px dashed purple;
-}*/
+.localisation{
+    padding: 1rem 0;
+    /*border: 2px dashed purple;*/
+}
 
 .adresse{
+    height: 20rem;
+    padding-top: 3rem;
+    min-height: 25rem; /* voir si en html on peut pas rajouter un JCC et AIC sur la div */
     text-align: center;
-    padding-top: 13rem;
     /*border: 2px solid red;*/
 }
 
 .carte{
     margin: 0;
-    padding: 3rem 0;
+    padding: 0 15px;
+    min-height: 25rem;
     text-align: center;
     /*border: 2px solid blue;*/
 }
 
 .carte iframe{
-    width: 50rem;
-    height:35rem ;
+    width: 100%;
+    height: 100%;
     border: none;
     /*border: 2px solid green;*/
 }
