@@ -26,6 +26,7 @@ body.dark {
 .contNav{
     display:inline-block;
     width: 100%;
+    background-color: var(--bg-dark-2);
     /*border: 5px solid green;*/
 }
 
@@ -144,6 +145,13 @@ p{
     text-align: center;
 }
 
+.fictif{
+    background-color: var(--bg-light);
+}
+
+.accroche{
+    background-color: var(--bg-dark-2);
+}
 .photosAccueil img{
     width: 400px;
 }
