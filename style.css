@@ -48,6 +48,7 @@ body.dark {
 
 .nav-link{
     color: var(--bg-dark-texte);
+    font-size: 1.3rem;
 }
 
 /*  dark mode */
@@ -154,7 +155,7 @@ p{
 
 /* **************************************** réalisation **************************************** */
 
-/* projets */
+/* *************** projets *************** */
 .container-fluid{
     width: 100%;
     /*border: 2px solid blue;*/
@@ -198,7 +199,7 @@ p{
 }
 
 /* *********************************** contact *************************** */
-/* formulaire  */
+/* ************** formulaire ************** */
 .formulaire{
     padding: 20px 10px ;
     /*border: 2px dashed green;*/
@@ -237,7 +238,7 @@ textarea.form-control::placeholder{
     border: none;
 }
 
-/* localisation */
+/* *************** localisation **************** */
 .localisation{
     padding: 1rem 0;
     /*border: 2px dashed purple;*/
