@@ -67,32 +67,36 @@
     <main>
 
         <!-- mention obligatoire pour pévenir les utilisateur car le site va être héberger-->
-        <section class="fictif">
-            <h2>Site fictif</h2>
+        <section class="container-fluid fictif">
+            <div class="row g-0">
+                <h2>Site fictif</h2>
+            </div>
         </section>
 
 <!-- *********************************** Section accroche **************************************** -->
-        <section class="accroche">
-            <h1>Bienvenue chez :</h1>
+        <section class=" container-fluid accroche">
+            <div class="row g-0">
+                <h1>Bienvenue chez :</h1>
 
-            <div class="logoAccroche" >
-                <img id="image2" src="./img/logo/Fichier 3.png" alt="logo sans le nom de l'entreprise">
+                <div class="logoAccroche" >
+                    <img id="image2" src="./img/logo/Fichier 3.png" alt="logo sans le nom de l'entreprise">
+                </div>
+
+                <p class="texteAccroche">Votre partenaire pour un site internet sur mesure !</p>
             </div>
-
-            <p class="texteAccroche">Votre partenaire pour un site internet sur mesure !</p>
         </section>
 
 <!-- ********************************* service urgence ****************************************** -->
-        <div class=" container urgence">
-            <div class="row g-0">
-                <div class="col-4 buttonUrgence">
+        <div class=" container-fluid urgence">
+            <div class="row g-0 d-flex align-items-center d-flex justify-content-around">
+                <div class="col-4 ">
                     <button><a href="./realisation.html">Voir nos réalisation</a></button>
                 </div>
                 <div class="col-4 urgence">
                     <p>Devis en moins de <em>48 h</em></p>
                 </div>
-                <div class="col-4 buttonDevis">
-                    <button> <a href="./contact.html">Devis gratuit</a> </button>
+                <div class="col-4 ">
+                    <button > <a href="./contact.html">Devis gratuit</a> </button>
                 </div>
             </div>
         </div>
@@ -101,13 +105,13 @@
         <section class="container-fluid photos">
             <div class="row g-0">
                 <div class="col-12"> 
-                    <h2>Une équipe de passionnés du numérique, impliquée dans vos défis !</h2>
-                    <p>Chez Cerfweb, nous sommes une équipe d'experts passionnés par le numérique, dédiée à donner vie à vos projets web. Que vous envisagiez une création de site entièrement nouvelle ou une refonte de votre site existant, nous sommes là pour vous accompagner à chaque étape.</p>
+                    <h2>Chez Cerfweb, nous sommes une équipe d'experts passionnés!</h2>
+                    <p>Par le numérique, dédiée à donner vie à vos projets web. Que vous envisagiez une création de site entièrement nouvelle ou une refonte de votre site existant, nous sommes là pour vous accompagner à chaque étape.</p>
                 </div>
             </div>
             <div class="row g-0 photosAccueil">
                 <div class=" col-md-6">
-                    <img src="./img/environnemen_travail/groupe.jpg" class=" img-fluid" alt="">
+                    <img src="./img/environnemen_travail/groupe.jpg" class="img-fluid" alt="">
                 </div>
                 <div class=" col-md-6">
                     <img src="./img/groupe.jpg" class="img-fluid" alt="">
@@ -122,9 +126,9 @@
         </section>
 
 <!-- ********************************* service Projets ****************************************** -->
-        <section class="container-fluid projet">
+        <section class="container-fluid ideer">
             <div class="row g-0">
-                <div class="col-12">
+                <div>
                     <h2>Vous avez un projet de site web ?</h2>
                     <p>Notre équipe de professionnels met son savoir-faire à votre service pour vous offrir des solutions personnalisées qui répondent à vos besoins spécifiques. Avec notre expertise en développement web sur mesure, nous vous aidons à relever vos défis et à réaliser vos rêves numériques.</p>
                     <button> <a href="./agence.html">découvrir notre agence</a></button>
@@ -157,9 +161,75 @@
                 </div>
             </div>
         </section>
+
+        <!-- ********************************** contact ****************************-->
+        <section class="container-fluid accueilContact">
+            <div class="row g-2">
+                <img src="./img/developpement.jpg" class="col-md-4 " alt="">
+                <div class="col-md-8 ">
+                    <h2>Prê(e) à créer votre projet ?</h2>
+                    <p>Prêt(e) à donner vie à votre projet ? Nous vous invitons à découvrir notre portfolio pour apprécier la diversité et la qualité de nos réalisations. Notre objectif est de créer des sites qui non seulement attirent l’attention, mais qui convertissent également les visiteurs en clients fidèles.</p>
+                    <button><a href="contact.html">Nous contacter</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ********************************** services ****************************-->
+        <section class="container-fluid servicesAccueil">
+            <div class="row g-0">
+                <div class="col-4">
+                    <img id="service"  src="./img/logo/Fichier 3.png"  alt="">
+                    <p>Newsletter</p>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control col-md-12" id="email" value="Email" required>
+                        <button class="col-md-2"> -> </button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <P>Si vous avez des questions ou si vous souhaitez discuter de votre projet, n’hésitez pas à nous contacter. Prenez rendez-vous avec notre équipe, et ensemble, faisons de votre vision une réalité !</P>
+                </div>
+                <div class="col-4">
+                    <div>
+                        <h2>Nous contacter</h2>
+                        <p>lundi - vendredi </p>
+                        <p>8h -17 h</p>
+                    </div>
+                    <div>
+                        <button id="telephoneBoutton" class="buttonService" onclick="magieNumero()">Numéro de téléphone</button>
+                    </div>
+                    <div>
+                        <h2>Agence</h2>
+                        <p>150, rue du paradis</p>
+                        <p>67750 Scherwiller</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
+        <div class="container-fluid footer">
+            <div class="row g-0">
+                <div class="col-4">
+                    <div><a href="politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
+                    <div><a href="mentionLegal.html">Mention légales</a></div>
+                </div>
+                <div class="col-4">
+                    <p>&copy;2024 Cerfweb</p>
+                </div>
+                <div class="col-4">
+                     <div><p>Suivez-nous</p></div>
+                     <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     </footer>
     
