@@ -8,7 +8,7 @@ function boutonDarkMode() {
     document.getElementById('mode-icon').className = ISDARKMODE ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
 
     // rejouter autant que d'iamage par page a changer
-    document.getElementById('image1').src = ISDARKMODE ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
+    document.getElementById('logoNavBarre').src = ISDARKMODE ? './img/logo/Fichier 9.png' : './img/logo/Fichier 8.png';
     document.getElementById('image2').src = ISDARKMODE ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
     document.getElementById('image3').src = ISDARKMODE ? 'dark-image3.jpg' : 'light-image3.jpg';
 }

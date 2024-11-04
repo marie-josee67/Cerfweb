@@ -140,6 +140,10 @@ p{
 }
 
 /* **************************************** accueil **************************************** */
+.fictif, .accroche{
+    text-align: center;
+}
+
 .photosAccueil img{
     width: 400px;
 }
