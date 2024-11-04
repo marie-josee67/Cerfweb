@@ -148,9 +148,15 @@ p{
 .photosAccueil img{
     width: 400px;
 }
+.reaGauche{
+    border: 2px solid rgb(214, 201, 22);
 
+}
 /* carroussel  */
-
+.carousel{
+    width: 50%;
+    border: 2px solid red;
+}
 
 /* **************************************** réalisation **************************************** */
 
