@@ -203,23 +203,61 @@ p{
 }
 
 /* *********************************** contact *************************** */
+/* formulaire  */
+.formulaire{
+    padding: 20px 10px ;
+    border: 2px dashed green;
+}
+
+.form-label{
+    color: var(--bg-dark-texte);
+    margin-top: 10px;
+    border:2px solid blue;
+}
+
+.form-control{
+    font-size: var(--bg-dark-texte);
+    color: var(--bg-dark-texte);
+    background-color: var(--bg-2-light);
+    border: 2px solid magenta;
+}
+
+#message{
+    height: 15rem;
+}
+
+/* placeholder du message*/
+textarea.form-control::placeholder{
+    color: var(--bg-dark-texte);
+}
+/* boutton d'envoi*/
+.go{
+    text-transform: capitalize;
+    color: var(--bg-dark-texte);
+    background-color: var(--button-light);
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 5px 70px;
+    margin-top: 10px;
+    border: none;
+}
 
 /* localisation */
-.localisation{
+/*.localisation{
     border: 2px dashed purple;
-}
+}*/
 
 .adresse{
     text-align: center;
     padding-top: 13rem;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 .carte{
     margin: 0;
     padding: 3rem 0;
     text-align: center;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 
 .carte iframe{
@@ -244,35 +282,4 @@ p{
 
 #telephoneBoutton:hover {
     background-color: var(--button-light);
-}
-
-
-/* formulaire  */
-.formulaire{
-    border: 2px dashed green;
-    padding: 20px 10px ;
-}
-
-.form-label{
-    color: var(--bg-dark-texte);
-}
-
- .form-control{
-    font-size: var(--bg-dark-texte);
-    color: var(--bg-dark-texte);
-    background-color: var(--bg-2-light);
-    padding: 10px;
-    border: 2px solid magenta;
-}
-
-/* boutton d'envoi*/
-.go{
-    text-transform: capitalize;
-    color: var(--bg-dark-texte);
-    background-color: var(--button-light);
-    font-size: 1.6rem;
-    border-radius: 5px;
-    padding: 5px 70px;
-    margin-top: 10px;
-    border: none;
 }
