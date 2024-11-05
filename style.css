@@ -207,7 +207,9 @@ a{
 
 /* taille carrousel automatique */
 #carouselExampleSlidesOnly{
-   height: 25rem;
+    object-fit: cover;
+    height: 25rem;
+    width: 50%;
 }
 /* **************************************** réalisation **************************************** */
 
