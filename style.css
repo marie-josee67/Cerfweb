@@ -137,6 +137,11 @@ h2{
     font-size: 2rem;
 }
 
+h3{
+    font-family: "Meow Script", cursive;
+    font-size: 3.2rem;
+}
+
 p{
     font-family: cagliostro;
     font-size: 1.2rem;
@@ -159,6 +164,12 @@ a{
 .footer, .mention, .politique, .ajustement, .plan{
     background-color: var(--bg-light);
     margin: 0;
+    padding-top: 1rem;
+}
+
+.container-fluid{
+    width: 100%;
+    /*border: 2px solid blue;*/
 }
 
 /* **************************************** accueil **************************************** */
@@ -218,23 +229,43 @@ a{
     width: 50%;
 }
 
-/* **************************************** réalisation **************************************** */
+/* **************************************** agence **************************************** */
+.employer{
+    padding: 0;
+    border: 2px dashed purple;
+}
+
+.zoneEmployer{
+    border: 5px solid rgb(11, 112, 45);
+}
+
+.colonneEmployer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(20, 50, 105);
+}
 .cardAgence{
-    width: 25rem;
+    width: 20rem;
+    margin: 1rem;
+    border: 2px solid red;
 }
 
-.cardAgence .card-img-top{
-    height: 20rem;
+.card-img, .card-img-top{
+    height: 18rem;
+    border: 2px solid rgb(231, 133, 22);
 }
 
+.cardAgence .card-text{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid darkred;
+}
 
 /* **************************************** réalisation **************************************** */
 
 /* *************** projets *************** */
-.container-fluid{
-    width: 100%;
-    /*border: 2px solid blue;*/
-}
 
 .vignette{
     display: flex;
@@ -281,9 +312,21 @@ a{
 }
 
 /* *********************************** contact *************************** */
+.contact{
+    margin: 0;
+    padding-bottom: 1.5rem;
+    background-color: var(--bg-light);
+    /*border: 5px solid red;*/
+}
+
+.contact p{
+    margin: 0;
+    padding: 0;
+}
 /* ************** formulaire ************** */
 .formulaire{
     padding: 20px 10px ;
+    background-color: var(--bg-dark-2);
     /*border: 2px dashed green;*/
 }
 
@@ -323,6 +366,7 @@ textarea.form-control::placeholder{
 /* *************** localisation **************** */
 .localisation{
     padding: 1rem 0;
+    background-color: var(--bg-light);
     /*border: 2px dashed purple;*/
 }
 
@@ -366,6 +410,13 @@ textarea.form-control::placeholder{
     background-color: var(--button-light);
 }
 
+/* *************** footer ****************** */
+
+.footerBis{
+    padding-top: 1rem;
+    background-color: var(--bg-dark-2);
+    /*border: 2px solid blue;*/
+}
 /* **************************************** plan du site **************************************** */
 .sommaire{
     display: flex;
