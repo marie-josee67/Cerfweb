@@ -24,7 +24,7 @@ function boutonDarkMode() {
     if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier 8.png' : './img/logo/Fichier 9.png';
     if (image2) image2.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
     if (service) service.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
-    if (image3) image3.src = isDarkMode ? 'dark-image3.jpg' : 'light-image3.jpg';
+    if (image3) image3.src = isDarkMode ? './img/logo/fichier 4.png' : './img/logo/fichier 6.png';
 
     // Enregistrer le mode dans le localStorage
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
@@ -60,7 +60,7 @@ function applySavedTheme() {
     if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier 8.png' : './img/logo/Fichier 9.png';
     if (image2) image2.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
     if (service) service.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
-    if (image3) image3.src = isDarkMode ? 'dark-image3.jpg' : 'light-image3.jpg';
+    if (image3) image3.src = isDarkMode ? './img/logo/fichier 4.png' : './img/logo/fichier 6.png';
 }
 
 // Appliquer le thème sauvegardé au chargement
