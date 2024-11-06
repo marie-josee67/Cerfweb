@@ -235,7 +235,40 @@ a{
 }
 
 /* **************************************** agence **************************************** */
-/* ************* equipe ************* */
+/* ************* bg sections ************* */
+.agenceAccroche, .valeurs, .pourquoiNous{
+    background-color: var(--bg-light);
+    padding: 1rem 2rem;
+}
+
+.histoire, .employer, .rejoignerNous{
+    background-color: var(--bg-dark-2);
+    padding: 1rem 2rem;
+}
+
+/* ************* accroche ************* */
+.agenceTexte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid green;*/
+}
+
+.accrocheCerf{
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid red;*/
+}
+
+.cerf{
+    width: 287px;
+    height: 373px;
+    /*border: 2px solid violet;*/
+}
+
+/* ************* histoire ************* */
+
+/* ************* équipe ************* */
 .employer{
     padding: 0;
     /*border: 2px dashed purple;*/
