@@ -9,6 +9,7 @@
     --button-light-rose: #fda403;
     --button-light-blue: #fda403;
     --bg-2-light: #d9d9d9;
+    --bg-emploi:#ffffff;
 }
 
 /* Dark Mode */
@@ -20,6 +21,8 @@ body.dark {
     --bg-2-light:#939598;
     --button-light-rose: #440032;
     --button-light-blue: #000124;
+    --bg-emploi:#000124;
+
 }
 
 /* ************************************** global *********************************************** */
@@ -272,8 +275,12 @@ a{
 
 /* ************* équipe ************* */
 .employer{
-    padding: 0;
+    padding: 1rem 0;
     /*border: 2px dashed purple;*/
+}
+
+.employerTexte{
+    padding: 0 2rem;
 }
 
 /*.zoneEmployer{
@@ -287,13 +294,17 @@ a{
     /*border: 2px solid rgb(20, 50, 105);*/
 }
 .cardAgence{
-    width: 20rem;
+    width: 18rem;
     height: 16rem;
     margin: 1rem;
+    border: none;
+    border-radius: 0;
     /*border: 2px solid red;*/
 }
 
 .card-img-top{
+    height: 13rem;
+    border-radius: 0;
     overflow: hidden; /* cache se qui déborde */
     /*border: 2px solid rgb(231, 133, 22);*/
 }
@@ -307,11 +318,30 @@ a{
     /*border: 2px solid darkred;*/
 }
 .cardAgence .card-body{
+    color: var(--bg-dark-texte);
+    display: flex;
+    align-items: center;
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--bg-emploi); /* cache le bg d'origine */
     /*border: 2px solid rgb(18, 190, 190);*/
 }
+
+/* ************* pourquoi nous************* */
+.choix{
+    padding-left: 3rem;
+    /*border: 2px solid rebeccapurple;*/
+}
+
+.choix h3, .option h3{
+    width: 100%;
+    text-align: left;
+    /*border: 2px solid greenyellow;*/
+}
+/* ************* rejoigner nous ************* */
+
+
 /* **************************************** réalisation **************************************** */
 
 /* *************** projets *************** */
