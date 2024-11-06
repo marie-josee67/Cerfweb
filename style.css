@@ -102,6 +102,11 @@ body {
     margin-right: auto;
 }
 
+/*annule le boostrap effet au survol des liens */
+.nav-link:focus, .nav-link:hover{
+    color: var(--bg-dark-texte)
+}
+
 /* Vue mobile (max 768px) - bouton à gauche du burger */
 @media (max-width: 768px) {
     .navbar-toggler {
@@ -230,39 +235,48 @@ a{
 }
 
 /* **************************************** agence **************************************** */
+/* ************* equipe ************* */
 .employer{
     padding: 0;
-    border: 2px dashed purple;
+    /*border: 2px dashed purple;*/
 }
 
-.zoneEmployer{
+/*.zoneEmployer{
     border: 5px solid rgb(11, 112, 45);
-}
+}*/
 
 .colonneEmployer{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(20, 50, 105);
+    /*border: 2px solid rgb(20, 50, 105);*/
 }
 .cardAgence{
     width: 20rem;
+    height: 16rem;
     margin: 1rem;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
-.card-img, .card-img-top{
-    height: 18rem;
-    border: 2px solid rgb(231, 133, 22);
+.card-img-top{
+    overflow: hidden; /* cache se qui déborde */
+    /*border: 2px solid rgb(231, 133, 22);*/
 }
 
 .cardAgence .card-text{
+    text-align: center;
+    font-weight: 600;
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 2px solid darkred;
+    /*border: 2px solid darkred;*/
 }
-
+.cardAgence .card-body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*border: 2px solid rgb(18, 190, 190);*/
+}
 /* **************************************** réalisation **************************************** */
 
 /* *************** projets *************** */
