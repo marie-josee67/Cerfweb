@@ -133,18 +133,20 @@ body {
 
 h1{
     font-family: "Meow Script", cursive;
-    font-size: 3.6rem;
+    font-size: 4.5rem;
     text-align: center;
 }
 
 h2{
     font-family: gabriela;
     font-size: 2rem;
+    text-align: center;
 }
 
 h3{
     font-family: "Meow Script", cursive;
-    font-size: 3.2rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 p{
@@ -411,6 +413,10 @@ textarea.form-control::placeholder{
 }
 
 /* *************** localisation **************** */
+.titreSection{
+    padding-bottom: 1rem;
+}
+
 .localisation{
     padding: 1rem 0;
     background-color: var(--bg-light);
@@ -444,7 +450,7 @@ textarea.form-control::placeholder{
 /* Style du bouton */
  #telephoneBoutton {
     padding: 10px 20px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     cursor: pointer;
     background-color:var(--button-light);
     color:var(--bg-dark-texte);
