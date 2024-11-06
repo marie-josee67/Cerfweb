@@ -220,7 +220,11 @@ a{
 
 /* **************************************** réalisation **************************************** */
 .cardAgence{
-    width: 18rem;
+    width: 25rem;
+}
+
+.cardAgence .card-img-top{
+    height: 20rem;
 }
 
 
