@@ -155,13 +155,19 @@ a{
     text-decoration: none;
 }
 
+/* background des sections */
+.footer, .mention, .politique, .ajustement, .plan{
+    background-color: var(--bg-light);
+    margin: 0;
+}
+
 /* **************************************** accueil **************************************** */
 .fictif, .accroche, .urgence{
     text-align: center;
     padding: 1rem 0;
 }
 
-.fictif, .urgence, .ideer, .accueilContact, .footer{
+.fictif, .urgence, .ideer, .accueilContact{
     background-color: var(--bg-light);
     padding: 1rem 2rem;
 }
@@ -347,4 +353,18 @@ textarea.form-control::placeholder{
 
 #telephoneBoutton:hover {
     background-color: var(--button-light);
+}
+
+/* **************************************** plan du site **************************************** */
+.sommaire{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    line-height: 1.8rem; /* écart entre deux lignes */
+    font-weight: 500; /* graisse de la typo */
+    /*border: 2px solid red;*/
+}
+
+.sommaire ul li{
+    list-style: none;  /* enlève les puces */
 }
