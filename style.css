@@ -105,6 +105,16 @@ body {
     margin-right: auto;
 }
 
+/* bouton burger */
+button.navbar-toggler{
+    background-color: var(--button-light-rose);
+}
+
+/* barre burger*/
+span.navbar-toggler-icon{
+    background-color: var(--bg-dark-texte);
+}
+
 /*annule le boostrap effet au survol des liens */
 .nav-link:focus, .nav-link:hover{
     color: var(--bg-dark-texte)
