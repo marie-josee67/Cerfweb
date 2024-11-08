@@ -390,39 +390,65 @@ a{
 }
 
 /* **************************************** réalisation **************************************** */
+/* ************* bg sections ************* */
+.realisation{
+    background-color: var(--bg-light);
+    padding: 1rem 2rem;
+}
+
+.reaProjet{
+    background-color: var(--bg-dark-2);
+    padding: 1rem 2rem;
+}
 
 /* *************** projets *************** */
 
 .vignette{
-    display: flex;
-    justify-content: center;
     width: 100%;
-    border: 2px solid rgb(197, 151, 26);
+    /*border: 2px solid rgb(197, 151, 26);*/
+}
+
+.carteRea{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    /*border: 2px solid green;*/
 }
 
 .projet{
-    margin: 0;
-    padding: 0;
-    border: 2px solid purple;
+    text-align: center;
+    /*border: 2px solid purple;*/
 }
 
 .card-img{
-    width: 100%;
-    height: 20rem;
+    width: 28rem;
+    height: 22rem;
     margin: 0;
     padding: 0;
     object-fit: cover;
-    border: 2px solid red;
+    border-radius:10px  10px 0 0;
+    /*border: 2px solid red;*/
 }
+ .card-body{
+    padding: 0;
+    width: 100%;
+    /*border:2px dashed rgb(20, 160, 216);*/
+ }
 
 .card-title{
-    border: 2px solid blue;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*border: 2px solid blue;*/
 }
-
+/* retire de la card le bg */
+.realisation .buttonProjet{
+    background: none;
+}
 /* fiche descriptif de projet */
 .tailleFenetre{
-    width: 100%;
-    height: 100%;
     border: 2px solid rgb(30, 255, 0);
 }
 
