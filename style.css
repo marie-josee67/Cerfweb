@@ -245,10 +245,14 @@ a{
 /* taille carrousel automatique */
 #carouselExampleSlidesOnly{
     object-fit: cover;
-    height: 25rem;
+    height: 35rem;
     width: 50%;
+    overflow: hidden;
 }
-
+.reaGauche{
+    padding-top: 12rem;
+    /*border: 2px solid red;*/
+}
 /* **************************************** agence **************************************** */
 /* ************* bg sections ************* */
 .agenceAccroche, .valeurs, .pourquoiNous{
