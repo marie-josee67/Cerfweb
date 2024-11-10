@@ -1,0 +1,60 @@
+.fictif, .accroche, .urgence{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.fictif, .urgence, .ideer, .accueilContact{
+    background-color: var(--bg-light);
+    padding: 1rem 2rem;
+}
+
+.accroche, .photos, .realisation, .servicesAccueil{
+    background-color: var(--bg-dark-2);
+    padding: 1rem 2rem;
+}
+
+.urgence{
+    padding-bottom: 0.5rem;
+}
+
+.photosAccueil{
+    text-align: center;
+    /*border: 2px dashed green;*/
+}
+
+.img-fluid{
+    width: 35rem;
+    height: 20rem;
+    margin: 0;
+    padding: 1rem;
+    /*border: 2px solid red;*/
+}
+
+/* ***************** boutton dark mode ******************* */
+ .urgence button, .ideer button, .accueilContact button{
+    background-color: var(--button-light-blue);
+}
+
+.realisation button{
+    background-color: var(--button-light-rose);
+}
+/*.reaGauche{
+    border: 2px solid rgb(214, 201, 22);
+}*/
+/* carroussel  */
+/*.carousel{
+    width: 50%;
+    border: 2px solid red;
+}*/
+
+/* taille carrousel automatique */
+#carouselExampleSlidesOnly{
+    object-fit: cover;
+    height: 35rem;
+    width: 50%;
+    overflow: hidden;
+}
+.reaGauche{
+    padding-top: 12rem;
+    /*border: 2px solid red;*/
+}

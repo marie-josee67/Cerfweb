@@ -1,0 +1,12 @@
+.sommaire{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    line-height: 1.8rem; /* écart entre deux lignes */
+    font-weight: 500; /* graisse de la typo */
+    /*border: 2px solid red;*/
+}
+
+.sommaire ul li{
+    list-style: none;  /* enlève les puces */
+}
