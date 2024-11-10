@@ -1,4 +1,4 @@
-// ***************************************************************** Fonction pour basculer entre le mode sombre et clair
+// Fonction pour basculer entre le mode sombre et clair
 function boutonDarkMode() {
     // Basculer la classe 'dark' sur le body
     document.body.classList.toggle('dark');
@@ -75,9 +75,3 @@ if (toggleButton) {
     console.warn("Bouton de bascule de thème (ID 'toggle-theme-btn') non trouvé !");
 }
 
-
-// *********************************************************************************** bouton numéro page contact
-function magieNumero() {
-    // Remplacer le texte du bouton par le numéro de téléphone
-    document.getElementById("telephoneBoutton").innerText = "+33 1 23 45 67 89";
-}
