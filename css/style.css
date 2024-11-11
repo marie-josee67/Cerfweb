@@ -98,8 +98,7 @@ span.navbar-toggler-icon {
   background-color: var(--bg-dark-texte);
 }
 /*annule le boostrap effet au survol des liens */
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: var(--bg-dark-texte);
 }
 /* Vue mobile (max 768px) - bouton à gauche du burger */
@@ -119,48 +118,52 @@ span.navbar-toggler-icon {
     justify-content: center;
   }
 }
-.fa-moon,
-.fa-sun {
+
+/* icon dark mode */
+.fa-moon, .fa-sun {
   font-size: 20px;
   color: var(--bg-dark-texte);
   background-color: var(--button-light);
 }
+
 h1 {
   font-family: "Meow Script", cursive;
   font-size: 4.5rem;
   text-align: center;
 }
+
 h2 {
   font-family: gabriela;
   font-size: 2rem;
   text-align: center;
 }
+
 h3 {
   font-family: "Meow Script", cursive;
   text-align: center;
   font-size: 2rem;
 }
+
 p {
   font-family: cagliostro;
   font-size: 1.2rem;
 }
+
 button {
   background-color: var(--button-light);
   border-radius: 10px;
   padding: 0.8rem 1rem;
   border: none;
 }
+
 a {
   color: var(--bg-dark-texte);
   list-style: none;
   text-decoration: none;
 }
+
 /* background des sections */
-.footer,
-.mention,
-.politique,
-.ajustement,
-.plan {
+.footer, .mention, .politique, .ajustement, .plan {
   background-color: var(--bg-light);
   margin: 0;
   padding-top: 1rem;
@@ -168,4 +171,39 @@ a {
 .container-fluid {
   width: 100%;
   /*border: 2px solid blue;*/
+}
+
+/* ********************* résaux sociaux ******************************** */
+
+.fa-brands{
+  padding: 1rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--bg-2-light);
+}
+
+.facebook{
+  padding: 1rem 1.2rem;
+  /*border: 2px solid firebrick;*/
+}
+
+.speciauxFooter{
+  padding-top: 1rem;
+  /*border:2px solid red;*/
+}
+
+.footerSpeciaux{
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+/* code pour mobile seulement*/
+@media screen and (max-width:749px) {
+  .footerBis{
+    text-align: center;
+    /*border: 2px solid slateblue;*/
+  }
+  .footerTexte{
+    margin: 1rem 0;
+  }
 }
