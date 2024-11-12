@@ -89,13 +89,13 @@
 <!-- ********************************* service urgence ****************************************** -->
         <div class=" container-fluid urgence" id="accueilUrgence">
             <div class="row g-0 d-flex align-items-center d-flex justify-content-around">
-                <div class="col-4 ">
+                <div class="col-md-4 ">
                     <button><a href="./realisation.html">Voir nos réalisation</a></button>
                 </div>
-                <div class="col-4 urgence">
+                <div class="col-md-4 urgence">
                     <p>Devis en moins de <em>48 h</em></p>
                 </div>
-                <div class="col-4 ">
+                <div class="col-md-4 ">
                     <button > <a href="./contact.html">Devis gratuit</a> </button>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                 <div>
                     <h2>Nos réalisations</h2>
                 </div>
-                <div class="col-12 col-md-6 reaGauche">
+                <div class="col-md-6 reaGauche">
                     <div>
                         <p>Nous avons eu le privilège d’accompagner de nombreuses entreprises dans leur transformation digitale, en leur fournissant des services variés, allant de la conception de sites vitrine à des plateformes e-commerce sophistiquées. Chacune de nos réalisations est le fruit d’un travail collaboratif et d’une écoute attentive de vos attentes.</p>
                     </div>
@@ -152,7 +152,7 @@
                 </div>
 
                 <!-- carroussel -->
-                <div id="carouselExampleSlidesOnly" class="col-12 col-md-6 carousel slide " data-bs-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="col-md-6 carousel slide " data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./img/projet/Mousson.jpg" class="d-block w-100" alt="...">
@@ -168,9 +168,6 @@
                         <img src="./img/projet/Projet_restaurant_fictif_le_quai_des_machine.PNG" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/projet/Fiche_metier_Web_Design.JPG" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
                         <img src="./img/projet/Gambit_girs.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
@@ -182,7 +179,7 @@
             <div class="row g-2">
                 <img src="./img/developpement.jpg" class="col-md-4 " alt="">
                 <div class="col-md-8  my-auto">
-                    <div>
+                    <div class="texteContact">
                         <h2>Prê(e) à créer votre projet ?</h2>
                         <p>Prêt(e) à donner vie à votre projet ? Nous vous invitons à découvrir notre portfolio pour apprécier la diversité et la qualité de nos réalisations. Notre objectif est de créer des sites qui non seulement attirent l’attention, mais qui convertissent également les visiteurs en clients fidèles.</p>
                     </div>
@@ -196,30 +193,32 @@
         <!-- ********************************** services ****************************-->
         <section class="container-fluid servicesAccueil" id="accueilService">
             <div class="row g-0">
-                <div class="col-4">
+                <div class="col-md-4 Newsletter">
                     <img id="service"  src="./img/logo/Fichier 3.png"  alt="">
                     <p>Newsletter</p>
-                    <div class="col-md-12">
-                        <form>
-                            <input type="text" class="form-control col-md-12" id="email" value="Email" required>
-                            <button class="col-md-2"> -> </button>
+                    <div class="newsletterZone">
+                        <form class="row g-0">
+                        <div class="col-md-10 ">
+                            <input type="text" class="form-control emailNewsletter" id="email" value="Email" required>
+                        </div>
+                            <button class="col-md-2 boutonNewsletter"> <i class="fa-solid fa-arrow-right"></i> </button>
                         </form>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 texteService">
                     <P>Si vous avez des questions ou si vous souhaitez discuter de votre projet, n’hésitez pas à nous contacter. Prenez rendez-vous avec notre équipe, et ensemble, faisons de votre vision une réalité !</P>
                 </div>
-                <div class="col-4">
-                    <div>
-                        <h2>Nous contacter</h2>
+                <div class="col-md-4 infoService ContacterAgence">
+                    <div class="nousContacter">
+                        <h2 class="nousContacterTitle">Nous contacter</h2>
                         <p>lundi - vendredi </p>
                         <p>8h -17 h</p>
                     </div>
                     <div>
-                        <button id="telephoneBoutton" class="buttonService" onclick="magieNumero()">Numéro de téléphone</button>
+                        <button id="telephoneBoutton" class="buttonService boutonTel" onclick="magieNumero()">Numéro de téléphone</button>
                     </div>
-                    <div>
-                        <h2>Agence</h2>
+                    <div class="agenceService">
+                        <h2 class="nousContacterTitle">Agence</h2>
                         <p>150, rue du paradis</p>
                         <p>67750 Scherwiller</p>
                     </div>

@@ -160,6 +160,10 @@ footer, .mention, .politique, .ajustement, .plan {
   /*border: 2px solid blue;*/
 }
 
+footer{
+  padding-left: 1rem;
+}
+
 /* ********************* résaux sociaux ******************************** */
 
 .fa-brands{
