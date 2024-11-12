@@ -29,8 +29,21 @@
     /*border: 2px solid violet;*/
 }
 
-/* ************* histoire ************* */
+/* ************* valeurs ************* */
+.specialValeur{
+    width: 28%;
+    padding: 0 1rem;
+    /*border: 2px solid red;*/
+}
 
+/* mobile first */
+@media (max-width: 768px) {
+    .specialValeur{
+        width: 100%;
+        padding: 0 1rem;
+        /*border: 2px solid green;*/
+    }
+}
 /* ************* équipe ************* */
 .employer{
     padding: 1rem 0;
@@ -63,6 +76,7 @@
 .card-img-top{
     height: 13rem;
     border-radius: 0;
+    border: 1px solid var(--bg-dark-texte);
     overflow: hidden; /* cache se qui déborde */
     /*border: 2px solid rgb(231, 133, 22);*/
 }
@@ -120,6 +134,7 @@
 .imgNous{
     width: 100%;
     max-height: 20rem;
+    border: 1px solid var(--bg-dark-texte);
     /*border: 2px solid olivedrab;*/
 }
 
