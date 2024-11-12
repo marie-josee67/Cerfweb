@@ -28,8 +28,8 @@
 </head>
 <body>
     <header>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg contNav">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg contNav">
             <div class="container-fluid">
                 <!-- Logo qui renvoie à la page d'accueil -->
                 <a class="navbar-brand logo" href="./index.html">
@@ -72,10 +72,18 @@
     <main>
         <!-- accroche contact -->
         <section class="container-fluid contact">
-            <h1>Contact</h1>
-            <p>Vous avez un projet à nous soumettre ? Nous serions ravis de vous entendre ! Chez Cerfweb, nous croyons en l'importance de chaque idée, qu'elle soit petite ou grande. Chaque projet est une nouvelle opportunité de créer, d'innover et de collaborer. Si vous avez des questions, des besoins spécifiques ou simplement l'envie de discuter de vos idées, n'hésitez pas à nous contacter. 
-            
-            <p>Remplissez le formulaire ci-dessous ou utilisez nos coordonnées pour nous joindre. Nous sommes ici pour vous accompagner à chaque étape de votre projet, de la conception à la réalisation. Notre équipe d'experts est à votre disposition pour vous fournir des conseils personnalisés et des solutions adaptées à vos besoins. Ensemble, nous pourrons explorer comment donner vie à votre vision et atteindre vos objectifs. Nous avons hâte de collaborer avec vous et de transformer vos idées en succès tangible !</p>
+            <div class="row g-0">
+                <div class="col-md-1"></div>
+                <h1 class="col-md-10">Contact</h1>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <p class="col-md-10">Vous avez un projet à nous soumettre ? Nous serions ravis de vous entendre ! Chez Cerfweb, nous croyons en l'importance de chaque idée, qu'elle soit petite ou grande. Chaque projet est une nouvelle opportunité de créer, d'innover et de collaborer. Si vous avez des questions, des besoins spécifiques ou simplement l'envie de discuter de vos idées, n'hésitez pas à nous contacter. 
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <p class="col-md-10">Remplissez le formulaire ci-dessous ou utilisez nos coordonnées pour nous joindre. Nous sommes ici pour vous accompagner à chaque étape de votre projet, de la conception à la réalisation. Notre équipe d'experts est à votre disposition pour vous fournir des conseils personnalisés et des solutions adaptées à vos besoins. Ensemble, nous pourrons explorer comment donner vie à votre vision et atteindre vos objectifs. Nous avons hâte de collaborer avec vous et de transformer vos idées en succès tangible !</p>
+                <div class="col-md-1"></div>
+
+            </div>
         </section>
 
         <!-- formulmaire -->
@@ -84,40 +92,54 @@
                 <h2>Formulaire</h2>
             </div>
             <form class="row g-3"  method="post" action="#">
-                <div class=" col-md-6">
+                <div class="col-md-1"></div>
+                <div class=" col-md-5">
                     <label for="nom" class="form-label">Nom *</label>
                     <input type="text" class="form-control" id="nom" value="Nom" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <label for="prenom" class="form-label">Prenom *</label>
                     <input type="text" class="form-control" id="prenom" value="Prénom" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <label for="societe" class="form-label">Société</label>
                     <input type="text" class="form-control" id="societe" value="société">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <label for="telephone" class="form-label">Téléphone *</label>
                     <input type="text" class="form-control " id="telephone" value="01/23/45/67/89" required>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
                     <label for="email" class="form-label">Email *</label>
                     <input type="text" class="form-control" id="email" value="description@exemple.fr" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <label for="pieceJointe1" class="form-label"> Pièce jointe 1</label>
                     <input type="file" class="form-control" id="pieceJointe1">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <label for="pieceJointe2" class="form-label"> Pièce jointe 2</label>
                     <input type="file" class="form-control" id="pieceJointe2"  >
                 </div>
-                <div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
                     <label for="message" class="form-label">Message *</label>
                     <textarea name="message" class="form-control" id="message" placeholder="Bonjour ..."></textarea required>
                 </div>
-                <div class="col-12">
-                    <button  class="go" type="submit">go</button>
+                <div class="col-md-1"></div>
+                <div class="row g-2">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <button  class="go" type="submit">go</button>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </form>
         </section>
@@ -128,7 +150,8 @@
                 <h2>Localisation</h2>
             </div>
             <div class="row g-0 ">
-                <div class="col-md-6 adresse">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 adresse">
                     <div>
                         <p>150,rue du Paradis</p>
                     </div>
@@ -144,9 +167,11 @@
                     <!-- Bouton -->
                     <button id="telephoneBoutton" onclick="magieNumero()">Numéro de téléphone</button>
                 </div>
-                <div class="col-md-6 carte">
+                <div class="col-md-5 carte">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42472.48673986785!2d7.3737609888741!3d48.29264919261474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47915ac3a2094a61%3A0x40a5fb99a394800!2sScherwiller%2C%20France!5e0!3m2!1sfr!2snl!4v1730632065127!5m2!1sfr!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <div class="col-md-1"></div>
+
             </div>
         </section>
     </main>
@@ -154,15 +179,16 @@
     <footer>
         <div class="container-fluid footerBis">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
                     <div class="footerTexte"><a href="./politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
                     <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mention légales</a></div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="footerTexte"><a href="./planDuSite.html">Plan du site</a></div>
                     <p class="footerTexte speciauxFooter">&copy;2024 Cerfweb</p>
                 </div>
-                <div class="col-md-4 footerSpeciaux">
+                <div class="col-md-3 footerSpeciaux">
                      <div class="footerTexte"><p>Suivez-nous</p></div>
                      <div class="row g-0">
                         <a href="#" class="col-4"><i class="fa-brands fa-facebook-f footerTexte facebook"></i></a>
@@ -170,6 +196,8 @@
                         <a href="#"class="col-4" > <i class="fa-brands fa-x-twitter footerTexte"></i></a>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
+
             </div>
         </div>
     </footer>
