@@ -30,12 +30,10 @@ body.dark {
 }
 /* taille du logo */
 .logoComplet {
-  height: 88px;
+  height: 4rem;
+  padding: 0.3rem;
 }
-.logo {
-  width: 22%;
-  /*border:2px solid red;*/
-}
+
 .navbar-nav {
   width: 68%;
   display: flex;
@@ -124,6 +122,8 @@ h2 {
   font-family: gabriela;
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 2rem;
+
 }
 
 h3 {

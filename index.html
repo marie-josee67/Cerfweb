@@ -28,37 +28,45 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg contNav">
             <div class="container-fluid">
-                <!-- Logo qui renvoie à la page d'accueil -->
-                <a class="navbar-brand logo" href="./index.html">
-                    <img src="./img/logo/Fichier 9.png" id="logoNavBarre" class="logoComplet" alt="logo">
-                </a>
-                <!-- Bouton Dark Mode -->
-                <button class="dark-mode-button" onclick="boutonDarkMode()" id=" toggle-theme-btn">
-                    <i id="mode-icon" class="fa-solid fa-moon"></i>
-                </button>
-
-               <!-- Burger -->
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars navbar-toggler-icon"></i>
-                </button>
-
-
-                <!-- Navbar Onglet -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./agence.html">L'agence</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./realisation.html">Réalisation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
+                <div class="row g-0 col-md-12">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <!-- Logo qui renvoie à la page d'accueil -->
+                        <a class="navbar-brand logo" href="./index.html">
+                            <img src="./img/logo/Fichier 9.png" id="logoNavBarre" class="logoComplet" alt="logo">
+                        </a>
+                    </div>
+                
+                    <!-- Burger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                    </button>
+                    <div class="col-md-5">
+                        <!-- Navbar Onglet -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./agence.html">L'agence</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./realisation.html">Réalisation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Bouton Dark Mode -->
+                    <div class="col-md-2">
+                        <button class="dark-mode-button" onclick="boutonDarkMode()" id=" toggle-theme-btn">
+                            <i id="mode-icon" class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
         </nav>
@@ -147,7 +155,7 @@
             <div class="row g-0">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <h2 class="titleProjet">Vous avez un projet de site web ?</h2>
+                    <h2>Vous avez un projet de site web ?</h2>
                     <p>Notre équipe de professionnels met son savoir-faire à votre service pour vous offrir des solutions personnalisées qui répondent à vos besoins spécifiques.</p>
                     <p>Avec notre expertise en développement web sur mesure, nous vous aidons à relever vos défis et à réaliser vos rêves numériques.</p>
                     <button> <a href="./agence.html">Découvrir notre agence</a></button>
@@ -199,23 +207,27 @@
         <!-- ********************************** contact ****************************-->
         <section class="container-fluid accueilContact" id="accueilContact">
             <div class="row g-2">
-                <img src="./img/developpement.jpg" class="col-md-4 " alt="">
-                <div class="col-md-8  my-auto">
+                <div class="col-md-1"></div>
+                <img src="./img/developpement.jpg" class="col-md-3 " alt="">
+                <div class="col-md-7  my-auto">
                     <div class="texteContact">
-                        <h2 class="titleContact">Prê(e) à créer votre projet ?</h2>
+                        <h2>Prê(e) à créer votre projet ?</h2>
                         <p>Prêt(e) à donner vie à votre projet ? Nous vous invitons à découvrir notre portfolio pour apprécier la diversité et la qualité de nos réalisations. Notre objectif est de créer des sites qui non seulement attirent l’attention, mais qui convertissent également les visiteurs en clients fidèles.</p>
+                        <p></p>
                     </div>
                     <div class="boutonContact">
                         <button ><a href="contact.html">Nous contacter</a></button>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
             </div>
         </section>
 
         <!-- ********************************** services ****************************-->
         <section class="container-fluid servicesAccueil" id="accueilService">
             <div class="row g-0">
-                <div class="col-md-4 Newsletter">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 Newsletter">
                     <img id="service"  src="./img/logo/Fichier 3.png"  alt="">
                     <p>Newsletter</p>
                     <div class="newsletterZone">
@@ -230,9 +242,9 @@
                 <div class="col-md-4 texteService">
                     <P>Si vous avez des questions ou si vous souhaitez discuter de votre projet, n’hésitez pas à nous contacter. Prenez rendez-vous avec notre équipe, et ensemble, faisons de votre vision une réalité !</P>
                 </div>
-                <div class="col-md-4 infoService ContacterAgence">
+                <div class="col-md-3 infoService ContacterAgence">
                     <div class="nousContacter">
-                        <h2 class="nousContacterTitle">Nous contacter</h2>
+                        <h2>Nous contacter</h2>
                         <p>lundi - vendredi </p>
                         <p>8h -17 h</p>
                     </div>
@@ -245,6 +257,7 @@
                         <p>67750 Scherwiller</p>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
             </div>
         </section>
 
@@ -253,11 +266,12 @@
     <footer>
         <div class="container-fluid footerBis">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
                     <div class="footerTexte"><a href="./politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
                     <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mentions légales</a></div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="footerTexte"><a href="./planDuSite.html">Plan du site</a></div>
                     <p class="footerTexte speciauxFooter">&copy;2024 Cerfweb</p>
                 </div>
@@ -269,6 +283,8 @@
                         <a href="#"class="col-4" > <i class="fa-brands fa-x-twitter footerTexte"></i></a>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
+
             </div>
         </div>
     </footer>

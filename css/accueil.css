@@ -14,12 +14,6 @@
     background-color: var(--bg-dark-2);
     padding:2rem;
 }
-/* ***************** écart des H2 ******************* */
-
-.titlePhoto, .titleProjet{
-    padding-bottom: 2rem;
-    /*border:2px solid  red;*/
-}
 
 /* ******************** service urgence ********************* */
 .urgence{
