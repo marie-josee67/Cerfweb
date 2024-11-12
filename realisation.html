@@ -28,44 +28,51 @@
 </head>
 <body>
     <header>
-       <!-- Navbar -->
-       <nav class="navbar navbar-expand-lg contNav">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg contNav">
             <div class="container-fluid">
-                <!-- Logo qui renvoie à la page d'accueil -->
-                <a class="navbar-brand logo" href="./index.html">
-                    <img src="./img/logo/Fichier 9.png" id="logoNavBarre" class="logoComplet" alt="logo">
-                </a>
-
-                <!-- Bouton Dark Mode -->
-                <button class="dark-mode-button" onclick="boutonDarkMode()" id=" toggle-theme-btn">
-                    <i id="mode-icon" class="fa-solid fa-moon"></i>
-                </button>
-
-                <!-- Burger -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars navbar-toggler-icon"></i>
-                </button>
-
-
-                <!-- Navbar Onglet -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./agence.html">L'agence</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./realisation.html">Réalisation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
+                <div class="row g-0 col-md-12">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <!-- Logo qui renvoie à la page d'accueil -->
+                        <a class="navbar-brand logo" href="./index.html">
+                            <img src="./img/logo/Fichier 9.png" id="logoNavBarre" class="logoComplet" alt="logo">
+                        </a>
+                    </div>
+                
+                    <!-- Burger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                    </button>
+                    <div class="col-md-5">
+                        <!-- Navbar Onglet -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto"> <!-- mx-auto pour centrer les onglets -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./agence.html">L'agence</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./realisation.html">Réalisation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Bouton Dark Mode -->
+                    <div class="col-md-2">
+                        <button class="dark-mode-button" onclick="boutonDarkMode()" id=" toggle-theme-btn">
+                            <i id="mode-icon" class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
-        </nav>  
+        </nav>
     </header>
 
     <main>
@@ -394,11 +401,12 @@
     <footer>
         <div class="container-fluid footerBis">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
                     <div class="footerTexte"><a href="./politiqueConfidentialite.html">Politique de confidentialitée</a></div>  
-                    <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mention légales</a></div>
+                    <div class="footerTexte speciauxFooter"><a href="./mentionLegal.html">Mentions légales</a></div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="footerTexte"><a href="./planDuSite.html">Plan du site</a></div>
                     <p class="footerTexte speciauxFooter">&copy;2024 Cerfweb</p>
                 </div>
@@ -410,6 +418,8 @@
                         <a href="#"class="col-4" > <i class="fa-brands fa-x-twitter footerTexte"></i></a>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
+
             </div>
         </div>
     </footer>
