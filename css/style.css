@@ -20,13 +20,25 @@ body.dark {
   --bg-2-light: #939598;
   --bg-emploi: #000124;
 }
-/* ************************************** global *********************************************** */
-/* navbarre */
+/* ******************************  navbarre ************************** */
 .contNav {
   display: inline-block;
   width: 100%;
   background-color: var(--bg-dark-2);
   /*border: 5px solid green;*/
+}
+
+/* destock */
+@media (min-width: 769px){
+  .navigation{
+    padding: 0 3rem;
+    border: 2px solid red;
+  }
+
+  .onglet{
+    width: 70%;
+    border: 2px solid  purple;
+  }
 }
 /* taille du logo */
 .logoComplet {
@@ -44,7 +56,8 @@ body.dark {
   color: var(--bg-dark-texte);
   font-size: 1.3rem;
 }
-/*  dark mode */
+
+/*  ************************** dark mode ********************** */
 body {
   color: var(--bg-dark-texte);
   transition: background-color 0.3s, color 0.3s;
@@ -72,7 +85,7 @@ body {
   height: 100px;
   transition: opacity 0.3s;
 }
-/* nav bouton dark/light  */
+/* ********************************  nav bouton dark/light ********************************************* */
 /* Position du bouton de mode sombre en vue bureau */
 .dark-mode-button {
   margin-left: auto;
@@ -112,6 +125,7 @@ button.navbar-toggler {
   background-color: var(--button-light);
 }
 
+/* *************************** titres ************************************ */
 h1 {
   font-family: "Meow Script", cursive;
   font-size: 4.5rem;
@@ -131,7 +145,8 @@ h3 {
   text-align: center;
   font-size: 2rem;
 }
-
+ 
+/* ************************* autre éléments global ***************************** */
 p {
   font-family: cagliostro;
   font-size: 1.2rem;
@@ -248,7 +263,7 @@ footer, .mention, .politique, .ajustement, .plan {
     color: var(--button-light);
   }
 
-  /* footer */
+  /* ************************************************** footer ********************************** */
   .footerBis{
     text-align: center;
     /*border: 2px solid slateblue;*/
