@@ -46,8 +46,8 @@
 }
 /* ************* équipe ************* */
 .employer{
-    padding: 1rem 0;
-    /*border: 2px dashed purple;*/
+    padding: 1rem 7rem;
+    border: 2px dashed purple;
 }
 
 .employerTexte{
