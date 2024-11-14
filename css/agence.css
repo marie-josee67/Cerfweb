@@ -45,25 +45,32 @@
     }
 }
 /* ************* équipe ************* */
-.employer{
-    padding: 1rem 7rem;
-    border: 2px dashed purple;
+/* destock */
+@media (min-width: 769px) {
+    .employer{
+        padding: 1rem 7rem;
+        /*border: 2px dashed purple;*/
+    }
+    .employerTexte{
+        padding: 0 2rem;
+    }
+    .colonneEmployer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*border: 2px solid rgb(20, 50, 105);*/
+    }
+    .droiteEmployer{
+        justify-content: left;
+        /*border: 2px solid green;*/
+    }
+
+    .gaucheEmployer{
+        justify-content: right;
+        /*border: 2px solid rgb(185, 86, 177);*/
+    }
 }
 
-.employerTexte{
-    padding: 0 2rem;
-}
-
-/*.zoneEmployer{
-    border: 5px solid rgb(11, 112, 45);
-}*/
-
-.colonneEmployer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*border: 2px solid rgb(20, 50, 105);*/
-}
 .cardAgence{
     width: 18rem;
     height: 16rem;
@@ -101,16 +108,24 @@
 }
 
 /* ************* pourquoi nous************* */
-.choix{
-    padding-left: 3rem;
-    /*border: 2px solid rebeccapurple;*/
+/* destock */
+@media (min-width: 769px) {
+    .optionPourquoi{
+        padding: 0 6rem;
+        /*border: 2px solid orange;*/
+    }
+    .choix{
+        padding-left: 3rem;
+        /*border: 2px solid rebeccapurple;*/
+    }
 }
-
-.choix h3, .option h3{
+.choix h3{
     width: 100%;
     text-align: left;
+    padding: 1rem 0;
     /*border: 2px solid greenyellow;*/
 }
+
 
 /* ************* rejoigner nous ************* */
 .offreEmploi{
