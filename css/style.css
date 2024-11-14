@@ -32,14 +32,15 @@ body.dark {
 @media (min-width: 769px){
   .navigation{
     padding: 0 3rem;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
   }
 
   .onglet{
     width: 70%;
-    border: 2px solid  purple;
+    /*border: 2px solid  purple;*/
   }
 }
+
 /* taille du logo */
 .logoComplet {
   height: 4rem;
