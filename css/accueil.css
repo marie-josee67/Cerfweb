@@ -1,5 +1,5 @@
 /* ******************* bg de la page ************************ */
-.fictif, .accroche, .urgence{
+.accroche, .urgence{
     text-align: center;
     padding: 1rem 0;
     /*border: 2px solid red;*/
@@ -18,6 +18,16 @@
 /* ***************** bg dark mode ******************* */
 .urgence button, .ideer button, .accueilContact button{
     background-color: var(--button-light-blue);
+}
+
+/* ******************** site fictif ********************* */
+.fictif{
+    padding: 0;
+    /*border: 2px dashed blue;*/
+}
+.fictifTitle{
+    padding: 1rem 0;
+    /*border: 2px solid fuchsia;*/
 }
 
 /* ******************** service urgence ********************* */
