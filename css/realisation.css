@@ -57,9 +57,17 @@
 }
 /* fiche descriptif de projet */
 .tailleFenetre{
+    background: var(--bg-light);
+    text-align: left;
     border: 2px solid rgb(30, 255, 0);
 }
+svg.date{
+    color: var(--bg-dark-texte);
+}
 
+.btn-close{
+    border:2px solid red;
+}
 /* pour que les image dépasse pas */
 .modalImg{
     width: 100%;
