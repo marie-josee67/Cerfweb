@@ -147,7 +147,12 @@ h2 {
   padding-bottom: 2rem;
 
 }
-
+/* mobil first */
+@media (max-width: 768px){
+  h2{
+    padding-top: 2rem;
+  }
+}
 h3 {
   font-family: "Meow Script", cursive;
   text-align: center;
