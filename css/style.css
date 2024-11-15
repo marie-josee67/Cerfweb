@@ -28,6 +28,12 @@ body.dark {
   /*border: 5px solid green;*/
 }
 
+#navbarNav{
+  display: flex;
+  justify-content: space-around;
+  /*border: 2px solid red;*/
+}
+
 /* destock */
 @media (min-width: 769px){
   .navigation{

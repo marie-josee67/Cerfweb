@@ -1,3 +1,27 @@
+/* barre de navigation */
+.ajustement{
+    padding: 0;
+    margin: 0;
+}
+
+.contNav{
+    margin: 0;
+    padding: 0;
+    /*border:2px dashed gold;*/
+}
+
+/* bouton retour */
+.retour{
+    padding: 0.5rem 1rem;
+    /*border: 2px solid green;*/
+}
+
+.retourX{
+    font-size: 1.5rem;
+    /*border:2px solid purple;*/
+}
+
+/* sommaire*/
 .sommaire{
     display: flex;
     justify-content: center;
