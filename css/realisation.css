@@ -10,7 +10,6 @@
 }
 
 /* *************** projets *************** */
-
 .vignette{
     width: 100%;
     /*border: 2px solid rgb(197, 151, 26);*/
@@ -77,4 +76,13 @@ svg.date{
 .buttonProjet{
     background: none;
     border: none;
+}
+
+/* destock */
+@media (min-width: 769px){
+    .projetRealisation{
+        padding:0 6rem;
+        /*border: 2px solid rgb(131, 25, 163);*/
+    }
+    
 }
