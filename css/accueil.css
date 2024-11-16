@@ -30,6 +30,14 @@
     /*border: 2px solid fuchsia;*/
 }
 
+/* ********************* Section accroche ********************* */
+/* mobile first */
+@media (max-width: 768px) {
+    .texteAccroche{
+        padding-top: 1.5rem;
+        /*border: 2px solid fuchsia;*/
+    }
+}
 /* ******************** service urgence ********************* */
 .urgence{
     padding-bottom: 0.5rem;
@@ -47,9 +55,18 @@
     border: 1px solid var(--bg-dark-texte);
     /*border: 2px solid red;*/
 }
+
+/* mobile first */
+@media (max-width: 768px) {
+    .devisUrgence{
+        margin-bottom: 1.5rem;
+        /*border: 2px solid fuchsia;*/
+    }
+}
 /* ********************* équipe ************************* */
 .para{
     padding-bottom: 1rem;
+    /*border: 2px solid palegreen;*/
 }
 
 /* gauche */
@@ -65,6 +82,31 @@
     padding-left: 4rem;
     /*border: 2px solid rgb(25, 189, 34);*/
 }
+
+/* mobile first */
+@media (max-width: 768px) {
+    .textPhoto{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /*border: 2px solid rgb(209, 120, 5);*/
+    }
+    .titlePhoto{
+        font-size:1.5rem ;
+    }
+
+    .imgPhotos{
+        padding-right: 1rem;
+        /*border: 2px solid red;*/
+    }
+
+    .imgPhotosSecond{
+       padding:0 1rem 0 0;
+        /*border: 2px solid rgb(25, 189, 34);*/
+    }
+}
+
+
 /* ***************** nos réalisations ******************* */
 .realisation button{
     background-color: var(--button-light-rose);
@@ -93,7 +135,7 @@
 }
 
 .reaGauche{
-    padding-top: 12rem;
+    padding-top: 5%;
     /*border: 2px solid red;*/
 }
 
@@ -113,6 +155,12 @@
     .reaGauche{
         padding: 0;
     }
+    .text-center{
+        text-align: left !important; /* "!"important écrase le bosstrap avec le même mot  */
+        padding-bottom: 3rem;
+        /*border:2px solid blue;*/
+    }
+    
 }
 /* ***************** créer votre projet ? *********************** */
 .texteContact, .boutonContact{
@@ -121,12 +169,17 @@
 }
 
 /* ***************** service avant footer *********************** */
+#service{
+    margin-bottom: 2rem;
+    /*border: 2px solid hotpink;*/
+}
+
 .Newsletter, .texteService, .infoService{
     padding:0 3rem;
     /*border:2px solid rgb(184, 18, 148);*/
 }
 
-/* ***************** zone gauche ******************** */
+/* zone gauche */
 .boutonNewsletter{
     display: flex;
     align-items: center;
@@ -148,10 +201,11 @@
     /*border:2px solid orangered;*/
 }
 
-/* ***************** zone centre ******************** */
-/*.newsletterZone{
+/* zone centre */
+.newsletterZone{
+    padding-bottom: 1rem;
     /*border: 2px dashed aliceblue;*/
-/*}*/
+}
 
 .texteService{
     display: flex;
@@ -159,15 +213,11 @@
     /*border:2px solid rgb(221, 208, 21);*/
 }
 
-/* ***************** zone droite ******************** */
+/*zone droite */
 .nousContacterTitle{
     padding-bottom: 1rem;
     /*border:2px solid palegreen;*/
 }
-
-/*.nousContacter{
-    border: 2px dashed rgb(214, 211, 24);
-}*/
 
 .boutonTel{
     background-color: var(--button-light-rose);
@@ -175,7 +225,3 @@
     margin: 1rem 0 2.5rem 0;
     /*border:2px solid burlywood;*/
 }
-
-/*.agenceService{
-    border: 2px solid red;
-}*/
