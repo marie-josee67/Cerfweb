@@ -21,10 +21,10 @@ function boutonDarkMode() {
     const service = document.getElementById('service');
     const image3 = document.getElementById('image3');
 
-    if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier 8.png' : './img/logo/Fichier 9.png';
-    if (image2) image2.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
-    if (service) service.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
-    if (image3) image3.src = isDarkMode ? './img/logo/fichier 4.png' : './img/logo/fichier 6.png';
+    if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier_8.png' : './img/logo/Fichier_9.png';
+    if (image2) image2.src = isDarkMode ? './img/logo/fichier_2.png' : './img/logo/Fichier_3.png';
+    if (service) service.src = isDarkMode ? './img/logo/fichier_2.png' : './img/logo/Fichier_3.png';
+    if (image3) image3.src = isDarkMode ? './img/logo/fichier_4.png' : './img/logo/fichier_6.png';
 
     // Enregistrer le mode dans le localStorage
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
@@ -57,10 +57,10 @@ function applySavedTheme() {
     const service = document.getElementById('service');
     const image3 = document.getElementById('image3');
 
-    if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier 8.png' : './img/logo/Fichier 9.png';
-    if (image2) image2.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
-    if (service) service.src = isDarkMode ? './img/logo/fichier 2.png' : './img/logo/Fichier 3.png';
-    if (image3) image3.src = isDarkMode ? './img/logo/fichier 4.png' : './img/logo/fichier 6.png';
+    if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier_8.png' : './img/logo/Fichier_9.png';
+    if (image2) image2.src = isDarkMode ? './img/logo/fichier_2.png' : './img/logo/Fichier_3.png';
+    if (service) service.src = isDarkMode ? './img/logo/fichier_2.png' : './img/logo/Fichier_3.png';
+    if (image3) image3.src = isDarkMode ? './img/logo/fichier_4.png' : './img/logo/fichier_6.png';
 }
 
 // Appliquer le thème sauvegardé au chargement
