@@ -10,6 +10,20 @@
     /*border:2px dashed gold;*/
 }
 
+#navbarNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* destock */
+@media (min-width: 769px){
+    #navbarNav{
+        justify-content: space-around;
+    }
+}
+
 /* bouton retour */
 .retour{
     padding: 0.5rem 1rem;
