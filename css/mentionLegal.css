@@ -4,6 +4,19 @@
     margin: 0;
 }
 
+#navbarNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* destock */
+@media (min-width: 769px){
+    #navbarNav{
+        padding: 0 9rem;
+    }
+}
 h2, h3{
     text-align: left;
 }
