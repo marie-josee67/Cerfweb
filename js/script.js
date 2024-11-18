@@ -1,56 +1,54 @@
+// Appliquer immédiatement le thème avant que la page ne soit visible
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    const isDarkMode = savedTheme === 'dark'; // Vérifier si c'est le mode sombre
+    document.body.classList.add(isDarkMode ? 'dark' : '');  // Appliquer immédiatement le mode sombre ou clair
+
+    // Mettre à jour les images et icônes
+    updateImagesForMode(isDarkMode);
+
+    // Mettre à jour l'icône du mode
+    const modeIcon = document.getElementById('mode-icon');
+    if (modeIcon) {
+        modeIcon.className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    }
+
+    // Retirer la classe "transitioning" après tout affichage pour éviter les flashes
+    document.body.classList.remove('transitioning');
+});
+
 // Fonction pour basculer entre le mode sombre et clair
 function boutonDarkMode() {
-    // Basculer la classe 'dark' sur le body
-    const isDarkMode = document.body.classList.toggle('dark');
-    
-    // Vérification de l'état du mode
-    //console.log("Mode actuel après bascule :", isDarkMode ? 'dark' : 'light');
-    
-    // Changer l'icône du mode (passer de la lune au soleil et inversement)
-    const modeIcon = document.getElementById('mode-icon');
-    if (modeIcon) {
-        modeIcon.className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    } else {
-        //console.warn("Élément 'mode-icon' non trouvé !");
-    }
+    // Ajouter la classe 'transitioning' pour cacher les éléments pendant la transition
+    document.body.classList.add('transitioning');
+    const images = document.querySelectorAll('img');
+    images.forEach(image => image.classList.add('transitioning'));
 
-    // Changer les images en fonction du mode
-    const logoNavBarre = document.getElementById('logoNavBarre');
-    const image2 = document.getElementById('image2');
-    const service = document.getElementById('service');
-    const image3 = document.getElementById('image3');
+    // Après un léger délai pour cacher les éléments
+    setTimeout(() => {
+        // Basculer la classe 'dark' sur le body
+        const isDarkMode = document.body.classList.toggle('dark');
+        
+        // Changer l'icône du mode (passer de la lune au soleil et inversement)
+        const modeIcon = document.getElementById('mode-icon');
+        if (modeIcon) {
+            modeIcon.className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        }
 
-    if (logoNavBarre) logoNavBarre.src = isDarkMode ? './img/logo/Fichier_8.png' : './img/logo/Fichier_9.png';
-    if (image2) image2.src = isDarkMode ? './img/logo/fichier_2.png' : './img/logo/Fichier_3.png';
-    if (service) service.src = isDarkMode ? './img/logo/fichier_2.png' : './img/logo/Fichier_3.png';
-    if (image3) image3.src = isDarkMode ? './img/logo/fichier_4.png' : './img/logo/fichier_6.png';
+        // Changer les images en fonction du mode
+        updateImagesForMode(isDarkMode);
 
-    // Enregistrer l'état du mode dans localStorage pour qu'il soit persistant
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-   // console.log("Thème enregistré dans localStorage :", localStorage.getItem('theme'));
+        // Enregistrer l'état du mode dans localStorage pour qu'il soit persistant
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+
+        // Supprimer la classe 'transitioning' pour faire réapparaître les éléments
+        document.body.classList.remove('transitioning');
+        images.forEach(image => image.classList.remove('transitioning'));
+    }, 100); // Délai pour permettre de cacher les éléments avant d'effectuer les changements
 }
 
-// Fonction pour appliquer le mode sauvegardé au chargement de la page
-function applySavedTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    //console.log("Thème chargé depuis localStorage :", savedTheme); // Vérification
-
-    // Appliquer le mode sauvegardé ou utiliser le mode par défaut (clair)
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark');
-    } else {
-        document.body.classList.remove('dark');
-    }
-
-    // Mettre à jour l'icône et les images
-    const isDarkMode = document.body.classList.contains('dark');
-    const modeIcon = document.getElementById('mode-icon');
-    if (modeIcon) {
-        modeIcon.className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    } else {
-        //console.warn("Élément 'mode-icon' non trouvé !");
-    }
-
+// Fonction pour mettre à jour les images en fonction du mode
+function updateImagesForMode(isDarkMode) {
     const logoNavBarre = document.getElementById('logoNavBarre');
     const image2 = document.getElementById('image2');
     const service = document.getElementById('service');
@@ -63,14 +61,29 @@ function applySavedTheme() {
 }
 
 // Appliquer le thème sauvegardé au chargement
-document.addEventListener('DOMContentLoaded', applySavedTheme);
+document.addEventListener('DOMContentLoaded', function() {
+    // Appliquer immédiatement la classe 'dark' si le mode sombre est activé dans le localStorage
+    const savedTheme = localStorage.getItem('theme');
+    const isDarkMode = savedTheme === 'dark'; // Vérifier si c'est le mode sombre
+    document.body.classList.add(isDarkMode ? 'dark' : '');  // Appliquer immédiatement la classe dark si nécessaire
+
+    // Ajouter la classe 'transitioning' pour cacher les éléments pendant la transition
+    document.body.classList.add('transitioning');
+
+    // Mettre à jour les images en fonction du mode
+    updateImagesForMode(isDarkMode);
+
+    // Mettre à jour l'icône du mode (lune ou soleil)
+    const modeIcon = document.getElementById('mode-icon');
+    if (modeIcon) {
+        modeIcon.className = isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    }
+
+    // Retirer la classe 'transitioning' après un délai de 100ms pour permettre la transition
+    setTimeout(() => {
+        document.body.classList.remove('transitioning');
+    }, 100);
+});
 
 
-// Vérifiez si le bouton de bascule existe dans le DOM et ajouter l'événement
-const toggleButton = document.getElementById('toggle-theme-btn');
-if (toggleButton) {
-    toggleButton.addEventListener('click', boutonDarkMode);
-    console.log("Bouton de bascule de thème ajouté avec succès.");
-} else {
-    console.warn("Bouton de bascule de thème ('#toggle-theme-btn') non trouvé !");
-}
+

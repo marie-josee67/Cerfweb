@@ -21,9 +21,38 @@ body.dark {
   --bg-emploi: #000124;
 }
 /* ******************************  navbarre ************************** */
-/* Masquer le contenu jusqu'à ce que le thème soit appliqué */
-.theme-loading {
-  visibility: hidden;
+/* Classe pour masquer le contenu jusqu'à ce que le thème soit appliqué */
+.hide {
+  visibility: hidden; /* Masque le contenu */
+}
+
+body.dark .hide {
+  visibility: visible; /* Affiche le contenu quand le mode sombre est activé */
+}
+
+/* Appliquez une couleur de fond sombre immédiatement avant tout rendu */
+body {
+  background-color: #1c1c1c;  /* Couleur de fond sombre */
+  color: white;
+  transition: none; /* Pas de transition immédiatement pour éviter des flashs */
+}
+
+/* Lorsque le mode clair est activé */
+body:not(.dark) {
+  background-color: white; /* Fond clair pour le mode par défaut */
+  color: black;
+}
+
+/* Ajoutez une transition fluide lorsque le mode est basculé */
+body.dark {
+  background-color: #1c1c1c;  /* Fond sombre pour le mode sombre */
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Transition pour les images */
+img {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .contNav {
