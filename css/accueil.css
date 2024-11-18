@@ -168,6 +168,10 @@
     /*border:2px solid blue;*/
 }
 
+.textBouttonContact{
+    color: var(--bg-dark-texte);
+    border: 2px solid red;
+}
 /* ***************** service avant footer *********************** */
 #service{
     margin-bottom: 2rem;
