@@ -72,6 +72,6 @@ if (toggleButton) {
     toggleButton.addEventListener('click', boutonDarkMode);
     console.log("Bouton de bascule de thème ajouté avec succès.");
 } else {
-    console.warn("Bouton de bascule de thème (ID 'toggle-theme-btn') non trouvé !");
+    console.warn("Bouton de bascule de thème (ID'toggle-theme-btn') non trouvé !");
 }
 
