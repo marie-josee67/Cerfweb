@@ -21,6 +21,11 @@ body.dark {
   --bg-emploi: #000124;
 }
 /* ******************************  navbarre ************************** */
+/* Masquer le contenu jusqu'à ce que le thème soit appliqué */
+.theme-loading {
+  visibility: hidden;
+}
+
 .contNav {
   display: inline-block;
   width: 100%;
