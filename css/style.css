@@ -24,7 +24,6 @@ body.dark {
 /* Classe pour masquer le contenu jusqu'à ce que le thème soit appliqué */
 .hide {
   visibility: hidden; /* Masque le contenu */
-  border:2px solid red;
 }
 
 body.dark .hide {

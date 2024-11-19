@@ -86,11 +86,6 @@ svg.date{
     color: var(--bg-dark-texte);
 }
 
-.btn-close{
-    color: var(--bg-dark-texte);
-    border:2px solid red;
-}
-
 /* pour que les image dépasse pas */
 .modalImg{
     width: 100%;
@@ -111,6 +106,15 @@ svg.date{
     
 }
 
+.calendrier{
+    padding-top: 1rem;
+    /*border:2px solid teal;*/
+}
+
+.fa-calendar{
+    font-size: 1.8rem;
+    /*border: 2px solid royalblue;*/
+}
 /* ****************** Projet ******************* */
 
 .speProjet{
