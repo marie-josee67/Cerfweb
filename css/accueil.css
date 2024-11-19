@@ -31,13 +31,11 @@
 }
 
 /* ********************* Section accroche ********************* */
-/* mobile first */
-@media (max-width: 768px) {
-    .texteAccroche{
-        padding-top: 1.5rem;
-        /*border: 2px solid fuchsia;*/
-    }
+.texteAccroche{
+    padding-top: 1.5rem;
+    /*border: 2px solid fuchsia;*/
 }
+
 /* ******************** service urgence ********************* */
 .urgence{
     padding-bottom: 0.5rem;
