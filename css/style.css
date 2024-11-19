@@ -8,6 +8,7 @@
   --button-light-blue: #fda403;
   --bg-2-light: #d9d9d9;
   --bg-emploi: #ffffff;
+  --bs-btn-close-color-bg:black;
 }
 /* Dark Mode */
 body.dark {
@@ -19,6 +20,8 @@ body.dark {
   --button-light-blue: #000124;
   --bg-2-light: #939598;
   --bg-emploi: #000124;
+  --bs-btn-close-color-bg:#ffffff;
+
 }
 /* ******************************  navbarre ************************** */
 /* Classe pour masquer le contenu jusqu'à ce que le thème soit appliqué */

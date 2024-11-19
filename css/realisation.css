@@ -70,10 +70,23 @@
    /* border: 2px solid blue;*/
 }
 
+/* modal */
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    /*border:2px dashed turquoise;*/
+}
+/*modal boutton retour*/
+.btnClose{
+    border-radius: 0.5rem;
+    background-color: var(--button-light-blue);
+    /*border:2px solid goldenrod;*/
+}
 /* retire de la card le bg */
 .realisation .buttonProjet{
     background: none;
 }
+
 
 /* fiche descriptif de projet */
 .tailleFenetre{
