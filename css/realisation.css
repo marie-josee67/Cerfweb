@@ -87,6 +87,7 @@ svg.date{
 }
 
 .btn-close{
+    color: var(--bg-dark-texte);
     border:2px solid red;
 }
 
