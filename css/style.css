@@ -217,7 +217,9 @@ footer, .mention, .politique, .ajustement, .plan {
   width: 100%;
   /*border: 2px solid blue;*/
 }
-
+span{
+  font-weight:600;
+}
 /* ********************* résaux sociaux ******************************** */
 
 .fa-brands{
