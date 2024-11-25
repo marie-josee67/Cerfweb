@@ -37,10 +37,21 @@
 }
 
 /* ******************** service urgence ********************* */
-.urgence{
-    padding-bottom: 0.5rem;
+.urgences{
+    text-align: center;
+    padding-top: 0.5rem;
+    margin: 1rem 0;
+    /*border: 2px solid firebrick;*/
 }
 
+/* desktop */
+@media (min-width: 769px) {
+    .urgences{
+        margin: 0;
+    }
+}
+
+/* ******************** équipe ********************* */
 .photosAccueil{
     text-align: center;
     /*border: 2px dashed green;*/
@@ -48,20 +59,19 @@
 
 .img-fluid{
     width: 35rem;
-    height: 20rem;
+    height: 15rem;
     margin: 1rem;
     border: 1px solid var(--bg-dark-texte);
     /*border: 2px solid red;*/
 }
 
-/* mobile first */
-@media (max-width: 768px) {
-    .devisUrgence{
-        margin-bottom: 1.5rem;
-        /*border: 2px solid fuchsia;*/
+/* desktop */
+@media (min-width: 769px) {
+    .img-fluid{
+        height: 20rem;
     }
 }
-/* ********************* équipe ************************* */
+
 .para{
     padding-bottom: 1rem;
     /*border: 2px solid palegreen;*/
@@ -83,12 +93,18 @@
 
 /* mobile first */
 @media (max-width: 768px) {
+    .devisUrgence{
+        margin-bottom: 1.5rem;
+        /*border: 2px solid fuchsia;*/
+    }
+
     .textPhoto{
         margin: 0;
         padding: 0;
         width: 100%;
         /*border: 2px solid rgb(209, 120, 5);*/
     }
+
     .titlePhoto{
         font-size:1.5rem ;
     }
