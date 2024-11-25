@@ -29,7 +29,7 @@
     /*border: 2px solid violet;*/
 }
 
-/* destock */
+/* desktop */
 @media (min-width: 769px){
     .cerf{
         width: 287px;
@@ -45,7 +45,7 @@
     padding: 1.5rem 0;
     /*border: 2px solid green;*/
 }
-/* destock */
+/* desktop */
 @media (min-width: 769px) {
     .specialValeur{
         width: 28%;
@@ -64,7 +64,7 @@
     }
 }
 /* ************* équipe ************* */
-/* destock */
+/* desktop */
 @media (min-width: 769px) {
     .employer{
         padding: 1rem 7rem;
@@ -127,7 +127,7 @@
 }
 
 /* ************* pourquoi nous************* */
-/* destock */
+/* desktop */
 @media (min-width: 769px) {
     .optionPourquoi{
         padding: 0 6rem;

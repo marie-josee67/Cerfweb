@@ -40,7 +40,7 @@
     /*border: 2px solid red;*/
 }
 
-/* destock */
+/* desktop */
 @media (min-width: 769px){
     .projet{
         padding: 2rem 3rem;
@@ -110,7 +110,7 @@ svg.date{
     border: none;
 }
 
-/* destock */
+/* desktop */
 @media (min-width: 769px){
     .projetRealisation{
         padding:0 6rem;
@@ -135,7 +135,7 @@ svg.date{
     /*border: 2px solid sandybrown;*/
 }
 
-/* destock */
+/* desktop */
 @media (min-width: 769px){
     .speProjet{
         font-size: 2rem;
