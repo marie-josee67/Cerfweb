@@ -164,7 +164,7 @@ button.navbar-toggler {
 /* *************************** titres ************************************ */
 h1 {
   font-family: "Meow Script", cursive;
-  font-size: 4.5rem;
+  font-size: 2.8rem;
   text-align: center;
   padding: 1rem 0 2rem 0;
 }
@@ -173,19 +173,29 @@ h2 {
   font-family: gabriela;
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 
 }
-/* mobil first */
-@media (max-width: 768px){
-  h2{
-    padding-top: 2rem;
-  }
-}
+
 h3 {
   font-family: "Meow Script", cursive;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+/* deskop */
+@media (min-width: 769px){
+  h1{
+    font-size: 4.5rem;
+  }
+
+  h2{
+    padding-top: 0;
+  }
+  
+  h3{
+    font-size: 1.8rem;
+  }
 }
  
 /* ************************* autre éléments global ***************************** */
