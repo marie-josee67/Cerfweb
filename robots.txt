@@ -1,7 +1,7 @@
-# Autoriser Googlebot à explorer tout le site
-User-agent: Googlebot
-Disallow:
-
 # Bloquer tous les autres robots
 User-agent: *
 Disallow: /
+
+# Autoriser Googlebot à explorer tout le site
+User-agent: Googlebot
+Disallow:
